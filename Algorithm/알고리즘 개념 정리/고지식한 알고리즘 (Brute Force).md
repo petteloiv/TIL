@@ -58,3 +58,58 @@ def BruteForce (p,t):
 이해.. 잘 ... 못해서 다시 들을 것! 
 ```
 
+
+
+### 헷갈리는 점!!!!! 
+
+```
+어떤 값의 인덱스 바꿔줄 것인지를 명확히 해야한다! 
+
+더 작은 값의 인덱스(찾을 값)를 기준으로 .. 리셋시키고 구해야한다. 
+
+컨벤션 주의!!!!! 
+```
+
+```python
+# SWEA 1213_string 
+
+for t in range(10):
+    tc = input()
+    find = input()
+    sentence = input()
+
+    count = 0
+    f = 0
+    s = 0
+
+    while f < len(find) and s < len(sentence):
+        if find[f] != sentence[s]:
+            s = s - f
+            f= -1
+        s += 1
+        f += 1
+        if f == len(find):
+            count += 1
+            f = 0
+
+    print(f'#{tc} {count}')
+```
+
+```python
+# 함수로 만들어서 쓸 수 있다! 대신 위치 잘 보고 넣기 ... 
+
+def BruteForce(sentence, find):
+    f = 0
+    s = 0
+    while f < len(find) and s < len(sentence):
+        if find[f] != sentence[s]:
+            s = s - f
+            f= -1
+        s += 1
+        f += 1
+        if f == len(find):
+            count += 1
+            f = 0
+    
+```
+
