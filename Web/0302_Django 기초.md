@@ -2,7 +2,7 @@
 
 
 
-WEB 키워드
+**WEB 키워드**
 
 1. 클라이언트 
    - 웹 브라우저가 클라이언트의 역할을 한다 .. 
@@ -13,8 +13,6 @@ WEB 키워드
 3. 요청 
 4. 응답
    - 요청을 받아서 html 파일 전달 
-
-
 
 
 
@@ -41,8 +39,6 @@ WEB 키워드
 - 방문자와 상호작용하기 때문에 페이지 내용 그때그때 다름! 
 - 서버 사이드 프로그래밍 언어 사용 .. 
 
-
-
 #### 1-3. Framework Architecture
 
 - MVC Design Pattern (model-view-controller)
@@ -50,8 +46,6 @@ WEB 키워드
 - Django는 **MTV Pattern**이라고 한다! 특별한 이유는 없음 
   - view를 template라고 부르고
   - controller를 .. 뭐 다른걸로 부른다 
-
-
 
 #### 1-4. MTV 패턴 
 
@@ -65,7 +59,41 @@ WEB 키워드
   - Model을 통해 요청 충족시키는데 필요한 데이터에 접근 
   - 템플릿에게 응답의 서식 설정 맡김 
 
-### 2. Django Introduction 
+![image-20220302092355925](0302_Django 기초.assets/image-20220302092355925.png)
 
-- 장고 = Python Web Framework
-- 
+- 순서 이해하기 .. (오늘은 모델 사용 X)
+  1. HTTP 요청 
+  2. URLS
+  3. View
+  4. Template 받아오기
+  5. HTTP 응답 (최종)
+
+
+
+### 2. Django 실습 시 ! 매번!~ 해야할 것~!  
+
+1. 항상 새 폴더 만들어서 가상 환경 설정 및 활성화 
+
+   - python -m venv venv
+
+   - 실행.. 
+
+   - VS Code에서 python select 들어가서  python 버전 누르기 
+
+2. 장고 설치하기 
+   - 버전 명시해서 설치
+
+3.  프로젝트 생성
+4. 서버 켜서 로켓 확인하기
+5. 서버 끄고 앱 생성
+6. 앱 등럭
+
+
+
+### 3. 요청과 응답 
+
+- 파일과 폴더 안헷갈리게 주의하자!!!!
+
+1. 프로젝트 폴더의 url.py 
+   - urlpatterns 리스트에 path 있움..
+     - admin 페이지 미리 만들어져있다! 
