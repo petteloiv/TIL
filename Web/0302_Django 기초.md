@@ -54,7 +54,7 @@
 - Template (MVC 에서는 View)
   - 파일의 구조나 레이아웃 정의
   - 실제 내용을 보여주는데 사용 (presentation)
-- View (MVC; Controller)\
+- View (MVC; Controller)
   - HTTP 요청을 수신하고 HTTP 응답을 반환 
   - Model을 통해 요청 충족시키는데 필요한 데이터에 접근 
   - 템플릿에게 응답의 서식 설정 맡김 
@@ -86,7 +86,7 @@
 3.  프로젝트 생성
 4. 서버 켜서 로켓 확인하기
 5. 서버 끄고 앱 생성
-6. 앱 등럭
+6. 앱 등록
 
 
 
