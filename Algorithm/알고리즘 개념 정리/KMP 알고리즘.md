@@ -18,7 +18,7 @@
 ![image-20220216112104465](C:\Users\petteloiv\AppData\Roaming\Typora\typora-user-images\image-20220216112104465.png)
 
 ```
-a, b, c까지는 일치했으므로 a,b,c 제외한 그 다음 부터 비교 시작! ㅎㅁㅁ
+a, b, c까지는 일치했으므로 a,b,c 제외한 그 다음 부터 비교 시작!!
 ```
 
 
